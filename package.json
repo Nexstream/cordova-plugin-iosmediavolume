@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-iosmediavolume",
+  "version": "1.0.0",
+  "description": "Plugin to make our iOS app follow Media volume instead of Ringer volume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nexstream <info@appxtream.com>",
+  "license": "UNLICENSED"
+}

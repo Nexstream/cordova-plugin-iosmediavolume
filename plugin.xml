@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-iosmediavolume"
+        version="1.0.0">
+
+    <name>iOS Media Volume fix</name>
+    <description>Make the iOS app follow Media volume instead of Ringer volume</description>
+    <author>Nexstream &lt;info@appxtream.com&gt;</author>
+    <keywords>cordova</keywords>
+    <license>UNLICENSED</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0" />
+    </engines>
+
+    <platform name="ios">
+        <framework src="AVFoundation.framework" />
+        <header-file src="src/ios/MediaVolume.h" />
+        <source-file src="src/ios/MediaVolume.m" />
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="MediaVolume">
+                <param name="ios-package" value="MediaVolume"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+    </platform>
+
+</plugin>
